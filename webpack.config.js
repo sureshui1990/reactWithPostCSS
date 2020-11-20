@@ -28,6 +28,11 @@ module.exports = {
                     "loader": "babel-loader"
                 }
             },
+            // CSS loader here
+            {
+                test: /\.svg$/,
+                use: 'file-loader'
+            },
             {
                 test: /\.css$/,
                 use: [
